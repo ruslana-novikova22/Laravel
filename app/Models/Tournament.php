@@ -18,7 +18,9 @@ class Tournament extends Model
         'score_1',
         'score_2',
         'score_3',
+        'creator_id'
     ];
+
 
     public $timestamps = true;
 }

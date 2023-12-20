@@ -21,82 +21,10 @@ return new class extends Migration
             $table->integer('score_1');
             $table->integer('score_2');
             $table->integer('score_3');
+            $table->bigInteger('creator_user_id');
             $table->timestamps();
         });
-        DB::table('tournaments')->insert([
-            [
-                'code' => '001',
-                'full_name' => 'Іван Кучеренко',
-                'gender' => 'чоловіча',
-                'age' => 25,
-                'country' => 'Україна',
-                'score_1' => 90,
-                'score_2' => 85,
-                'score_3' => 88,
-                'created_at' => now(),
-                'updated_at' => now(),
-           ],
-            [
-                'code' => '002',
-                'full_name' => 'Ганна Сидоренко',
-                'gender' => 'жіноча',
-                'age' => 28,
-                'country' => 'Сполучені Штати Америки',
-                'score_1' => 85,
-                'score_2' => 88,
-                'score_3' => 92,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'code' => '003',
-                'full_name' => 'Кирило Іванюк',
-                'gender' => 'чоловіча',
-                'age' => 22,
-                'country' => 'Німеччина',
-                'score_1' => 78,
-                'score_2' => 80,
-                'score_3' => 75,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'code' => '004',
-                'full_name' => 'Станіслава Ягненко',
-                'gender' => 'жіноча',
-                'age' => 24,
-                'country' => 'Франція',
-                'score_1' => 92,
-                'score_2' => 88,
-                'score_3' => 90,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'code' => '005',
-                'full_name' => 'Марко Проволець',
-                'gender' => 'чоловіча',
-                'age' => 30,
-                'country' => 'Іспанія',
-                'score_1' => 87,
-                'score_2' => 85,
-                'score_3' => 89,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'code' => '006',
-                'full_name' => 'Марія Василинець',
-                'gender' => 'жіноча',
-                'age' => 26,
-                'country' => 'Італія',
-                'score_1' => 82,
-                'score_2' => 84,
-                'score_3' => 87,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]
-        ]);
+
     }
 
     /**
